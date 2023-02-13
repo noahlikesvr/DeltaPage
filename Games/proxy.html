@@ -32,9 +32,8 @@
     form.addEventListener("submit", (event) => {
         event.preventDefault();
         const url = input.value;
-        fetch(url, {
+        fetch(`https://cors-anywhere.herokuapp.com/${url}`, {
             method: 'GET',
-            mode: 'no-cors',
             headers: {
                 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36'
             }
