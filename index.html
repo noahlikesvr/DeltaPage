@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DeltaAdvanced</title>
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="divs.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@500&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="./Images/favicon.ico">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </head>
+    <body>
+        <a href="index.html">
+            <img src="./Images/delta-advanced-logo.png" alt="Logo" width="100" height="85" id="logo">
+        </a>
+        <div class="top-strip" id="margin">
+            <h1 class="white">Delta Advanced | A Utility Project</h1>
+        </div>
+        <div class="sidebar">
+            <center><h2 class="white">Site Navigator</h2></center>
+            <h3 class="gray">Delta Advanced is a part of a project that I had started a while ago. I was inspired to make a better, more useful version of my "<a href="https://sites.google.com/view/noahsprojects/delta" target="_blank">Delta</a>" project.</h3>
+            <ul>
+                <li><a href="#home"> - Home</a></li>
+                <li><a href="#features"> - About</a></li>
+                <li><a href="#download"> - Download</a></li>
+                <li><a href="#otherProjects"> - Other Projects</a></li>
+                <li><a href="https://sites.google.com/view/noahsprojects" target="_blank"> - My Google Site</a></li>
+                <li><a href="./Games/games.html"> - Games / Other</a></li>
+            </ul>
+        </div>
+        <div id="home" style="margin-left: 240px;" class="black"><h1>Home</h1>
+            <h2>Hello! If you found this, you were either looking for this project, or wanting to book a flight.<br>
+                Delta is project that I've been working on since 2020 on and off. It's a utility program that can do some functions on your computer and make others easier.<br>
+                You are on the site for the advanced version that I am currently working on. This can do things like backing up your computer and running performace checks.<br>
+                The other releases of this projects can be found in the <a href="#otherProjects">other projects</a> section of this page.</h2>
+        </div>
+        <div id="features" style="margin-left: 240px;" class="black"><h1>Features</h1>
+            <div class="container">
+                <p class="text">Hover over me</p>
+                <img class="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMxEC-WkJk_NxgXOeRKoXFrMm9g7XSG7_Ueys9RY2T&s" alt="Your Image">
+            </div>
+              
+            <script>
+                const text = document.querySelector('.text');
+                const image = document.querySelector('.image');
+              
+                text.addEventListener('mouseenter', function () {
+                    image.style.display = 'block';
+                });
+              
+                text.addEventListener('mouseleave', function () {
+                    image.style.display = 'none';
+                });
+            </script> 
+            </script>                         
+        </div>
+        <div id="download" style="margin-left: 240px;" class="black"><h1>Download</h1></div>
+        <div id="otherProjects" style="margin-left: 240px;" class="black"><h1>Other Projects</h1></div>
+        <button id="top-btn" title="Back to top" style="display: none;">↑ Top</button>
+        <script>
+            $(document).ready(function() {
+                var sideBar = $(".sidebar");
+        
+                $(window).scroll(function() {
+                    var scrollTop = $(window).scrollTop();
+        
+                    if (scrollTop > 0) {
+                        sideBar.css("top", -scrollTop);
+                    } else {
+                        sideBar.css("top", 0);
+                    }
+                });
+            });
+        </script>
+        <script>
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                window.location.reload();
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+
+            // Get the button
+            var mybutton = document.getElementById("top-btn");
+
+            // When the user clicks on the button, scroll to the top of the document
+            mybutton.addEventListener("click", topFunction);
+
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    document.getElementById("top-btn").style.display = "block";
+                } else {
+                    document.getElementById("top-btn").style.display = "none";
+                }
+            }
+        </script>
+    </body>      
+</html>
