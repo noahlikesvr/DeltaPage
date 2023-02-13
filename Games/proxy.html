@@ -31,7 +31,25 @@
 
     form.addEventListener("submit", (event) => {
         event.preventDefault();
-        window.open(`proxy.php?url=${input.value}`, "_blank");
+        const url = input.value;
+        fetch(url, {
+            method: 'GET',
+            mode: 'no-cors',
+            headers: {
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36'
+            }
+        })
+        .then(response => {
+            return response.text();
+        })
+        .then(html => {
+            iframe.src = URL.createObjectURL(new Blob([html], {
+                type: 'text/html'
+            }));
+        })
+        .catch(error => {
+            console.error(error);
+        });
     });
   </script>
 </body>
