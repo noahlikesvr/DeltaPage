@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Web Proxy</title>
+  <style>
+    #proxy-form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    #url-input {
+      width: 50%;
+      height: 40px;
+      font-size: 20px;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <form id="proxy-form">
+    <input type="text" id="url-input" placeholder="Enter a URL">
+    <button type="submit">Go</button>
+  </form>
+  <iframe id="proxy-iframe" src="about:blank"></iframe>
+  <script>
+    const form = document.getElementById("proxy-form");
+    const input = document.getElementById("url-input");
+    const iframe = document.getElementById("proxy-iframe");
+
+    form.addEventListener("submit", (event) => {
+        event.preventDefault();
+        window.open(`proxy.php?url=${input.value}`, "_blank");
+    });
+  </script>
+</body>
+</html>

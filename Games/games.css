@@ -1,0 +1,54 @@
+#bk-btn {
+    position: fixed;
+    background: #ddd;
+    color: #000;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#snake-btn {
+    position: fixed;
+    background: #ddd;
+    color: #000;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#snake-btn-alt {
+    position: fixed;
+    background: #ddd;
+    color: #000;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#minesweeper-btn {
+    position: fixed;
+    background: #ddd;
+    color: #000;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#proxy-btn {
+    position: fixed;
+    background: #ddd;
+    color: #000;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+}

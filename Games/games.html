@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="games.css">
+        <title>Games / Other</title>
+    </head>
+    <body>
+        <button id="bk-btn" title="Back to main">← Back</button><br><br><br>
+        <button id="snake-btn" title="Snake Game">🐍 Snake</button><br><br><br>
+        <button id="snake-btn-alt" title="(Google) Snake Game">🐍 Google Snake</button><br><br><br>
+        <button id="minesweeper-btn" title="Minesweeper">🧹 Google Minesweeper</button><br><br><br>
+        <button id="proxy-btn" title="Web Proxy">💻 Proxy</button>
+        <script>
+            document.getElementById('bk-btn').onclick = function() {
+                window.location.href = "../index.html";
+            }
+        </script>
+        <script>
+            document.getElementById('snake-btn').onclick = function() {
+                window.location.href = "./snake.html";
+            }
+        </script>
+        <script>
+            document.getElementById('snake-btn-alt').onclick = function() {
+                window.location.href = "https://g.co/kgs/qd4MGY";
+            }
+        </script>
+        <script>
+            document.getElementById('minesweeper-btn').onclick = function() {
+                window.location.href = "https://g.co/kgs/HteKGt";
+            }
+        </script>
+        <script>
+            document.getElementById('proxy-btn').onclick = function() {
+                window.location.href = "./proxy.html";
+            }
+        </script>
+    </body>
+</html>
