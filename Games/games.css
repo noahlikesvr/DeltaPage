@@ -1,6 +1,6 @@
 #bk-btn {
     position: fixed;
-    background: #ddd;
+    background: #ff0000;
     color: #000;
     font-size: 16px;
     border: none;
@@ -43,6 +43,17 @@
 }
 
 #proxy-btn {
+    position: fixed;
+    background: #ddd;
+    color: #000;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#eaglercraft-btn {
     position: fixed;
     background: #ddd;
     color: #000;
