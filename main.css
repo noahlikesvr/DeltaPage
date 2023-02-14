@@ -44,16 +44,3 @@ a:active {
     color: black;
     font-family: 'Prompt', sans-serif;
 }
-
-#top-btn {
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
-    background: #ddd;
-    color: #000;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-    border-radius: 5px;
-}

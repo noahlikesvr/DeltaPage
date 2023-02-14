@@ -17,42 +17,37 @@
     background-color: #333;
     padding: 20px;
   }
-  
-  .sidebar h3 {
-    color: gray;
-    margin-bottom: 20px;
-  }
-  
-  .sidebar ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .sidebar li a {
-    color: white;
-    text-decoration: none;
-    display: block;
-    padding: 10px;
-  }
-  
-  .sidebar li a:hover {
-    background-color: #444;
-  }
 
-  .container {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .text {
-    padding: 20px;
-  }
-  
-  .image {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-  }  
+.sidebar h3 {
+  color: gray;
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+}
+
+.sidebar li a:hover {
+  background-color: #444;
+}
+
+#top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  background: #ddd;
+  color: #000;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+}
