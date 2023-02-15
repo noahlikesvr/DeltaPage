@@ -63,3 +63,47 @@
     padding: 10px;
     border-radius: 5px;
 }
+
+#classicmc-btn {
+    position: fixed;
+    background: #ddd;
+    color: #000;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#slope-btn {
+    position: fixed;
+    background: #ddd;
+    color: #000;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#pacman-btn {
+    position: fixed;
+    background: #ddd;
+    color: #000;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#twentyfourtyeight-btn {
+    position: fixed;
+    background: #ddd;
+    color: #000;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+}
